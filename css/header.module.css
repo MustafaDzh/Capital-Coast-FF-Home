@@ -1,0 +1,266 @@
+header {
+  background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), url("../images/hero-home.png") lightgray 50%/cover no-repeat;
+  /*FOR MOBILE BELOW*/
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-blend-mode: multiply;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(11, 25, 49, 0.48) 67.5%, rgba(0, 0, 9, 0.8) 100%);
+}
+header .phone, header .phone-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header .phone img, header .phone-link img {
+  margin-right: 10px;
+  position: relative;
+  width: 14.22px;
+  height: 14.22px;
+}
+header .phone p, header .phone-link p {
+  margin: 0;
+  letter-spacing: 0.588px;
+  color: #E4B271;
+  font-size: 14.694px;
+}
+header .screen-nav {
+  display: flex;
+  align-items: center;
+  width: 63%;
+}
+header .screen-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 24px 0 0;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+header .screen-nav ul li {
+  padding: 12px 10px;
+}
+header .screen-nav ul li a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+header .banner-bg {
+  position: relative;
+  width: 90%;
+  min-height: 75vh;
+}
+header .banner-bg .banner-content {
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(60%);
+  left: 10%;
+  width: 90%;
+}
+header .banner-bg .banner-content h1, header .banner-bg .banner-content p {
+  margin-bottom: 24px;
+}
+header .banner-bg .banner-content h1 {
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+header .banner-bg .banner-content h1 span {
+  color: #E4B271;
+}
+header .banner-bg .banner-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 60%;
+}
+header .banner-bg .banner-content .banner-btn {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header .mobile-nav, header .banner-bg-mobile, header .banner-text {
+  display: none;
+}
+header .hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+}
+header .hamburger-btn .hamburger-line {
+  background-color: #E4B271;
+  height: 3px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+@media screen and (min-width: 1055px) and (max-width: 1230px) {
+  header .screen-nav {
+    justify-content: flex-end;
+  }
+  header .hamburger-btn {
+    order: 1;
+  }
+}
+@media screen and (min-width: 879px) and (max-width: 1054px) {
+  header .screen-nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 878px) {
+  header .nav-container, header .container {
+    display: none !important;
+  }
+  header .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: #fff;
+    position: relative;
+  }
+  header .mobile-nav .mobile-screen-nav {
+    display: none;
+    background-color: #000;
+    padding: 16px;
+    width: 50%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: slideOut;
+  }
+  header .mobile-nav .mobile-screen-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  header .mobile-nav .mobile-screen-nav ul li {
+    padding: 10px 0;
+  }
+  header .mobile-nav .mobile-screen-nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+  header .mobile-nav .mobile-screen-nav .phone {
+    display: flex;
+    align-items: center;
+  }
+  header .mobile-nav .mobile-screen-nav .phone a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  header .mobile-nav .mobile-screen-nav .phone a img {
+    margin-right: 10px;
+    width: 14.22px;
+    height: 14.22px;
+  }
+  header .mobile-nav .mobile-screen-nav .phone a p {
+    margin: 0;
+    letter-spacing: 0.588px;
+    color: #E4B271;
+    font-size: 14.694px;
+  }
+  header .mobile-nav .mobile-screen-nav .btn {
+    background-color: #E4B271;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  header .mobile-nav.open .mobile-screen-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: slideIn;
+  }
+  header .mobile-nav .logo-wrapper img {
+    height: auto;
+    max-width: 100%;
+  }
+  header .banner-bg {
+    display: none;
+  }
+  header .banner-bg-mobile {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), lightgray 50%/cover no-repeat;
+  }
+  header .banner-bg-mobile img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  header .banner-bg-mobile .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0B1931;
+  }
+  header .banner-bg-mobile .banner-text h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #E4B271;
+    margin: 0;
+    padding: 56px 0 24px;
+  }
+  header .banner-bg-mobile .banner-text h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffffff;
+  }
+  header .banner-bg-mobile .banner-text h1 span {
+    color: #E4B271;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */
