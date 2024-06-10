@@ -1,99 +1,87 @@
 header {
-  background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), url("../images/hero-home.png") lightgray 50%/cover no-repeat;
-  /*FOR MOBILE BELOW*/
+  /* Mobile Styles */
 }
-header .container {
-  display: flex;
-  align-items: center;
+header .main-container {
+  background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), url("../images/hero-home.png") lightgray 50%/cover no-repeat;
+}
+header .main-container .container {
   justify-content: space-between;
   padding: 16px 24px;
-  background-blend-mode: multiply;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(11, 25, 49, 0.48) 67.5%, rgba(0, 0, 9, 0.8) 100%);
 }
-header .phone, header .phone-link {
+header .main-container .phone,
+header .main-container .phone-link {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-header .phone img, header .phone-link img {
-  margin-right: 10px;
-  position: relative;
-  width: 14.22px;
-  height: 14.22px;
-}
-header .phone p, header .phone-link p {
+header .main-container .phone p,
+header .main-container .phone-link p {
   margin: 0;
   letter-spacing: 0.588px;
   color: #E4B271;
   font-size: 14.694px;
 }
-header .screen-nav {
+header .main-container .screen-nav {
   display: flex;
   align-items: center;
   width: 63%;
 }
-header .screen-nav ul {
+header .main-container .screen-nav ul {
   list-style: none;
   display: flex;
-  padding: 0;
   margin: 0 24px 0 0;
   flex-grow: 1;
   justify-content: space-between;
 }
-header .screen-nav ul li {
+header .main-container .screen-nav ul li {
   padding: 12px 10px;
 }
-header .screen-nav ul li a {
+header .main-container .screen-nav ul li a {
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  display: block;
 }
-header .banner-bg {
+header .main-container .banner-bg {
   position: relative;
   width: 90%;
   min-height: 75vh;
 }
-header .banner-bg .banner-content {
+header .main-container .banner-bg .banner-content {
   position: absolute;
   bottom: 0%;
   transform: translateY(60%);
   left: 10%;
-  width: 90%;
 }
-header .banner-bg .banner-content h1, header .banner-bg .banner-content p {
+header .main-container .banner-bg .banner-content h1,
+header .main-container .banner-bg .banner-content p {
   margin-bottom: 24px;
 }
-header .banner-bg .banner-content h1 {
+header .main-container .banner-bg .banner-content h1 {
   font-size: 72px;
   line-height: 100%;
   text-transform: uppercase;
 }
-header .banner-bg .banner-content h1 span {
+header .main-container .banner-bg .banner-content h1 span {
   color: #E4B271;
 }
-header .banner-bg .banner-content p {
+header .main-container .banner-bg .banner-content p {
   font-size: 16px;
   line-height: 1.5;
   width: 60%;
 }
-header .banner-bg .banner-content .banner-btn {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
-  text-transform: uppercase;
-  background-color: transparent;
+header .main-container .banner-bg .banner-content .banner-btn {
+  background: transparent;
   border: none;
-  cursor: pointer;
+  text-transform: uppercase;
+  padding: 12px;
+  border-bottom: 1px solid #E4B271;
 }
-header .banner-bg .banner-content .banner-btn:hover {
-  text-decoration: underline;
-  text-decoration-color: #E4B271;
-  text-underline-offset: 7px;
-}
-header .mobile-nav, header .banner-bg-mobile, header .banner-text {
+header .mobile-nav,
+header .banner-bg-mobile,
+header .banner-text {
   display: none;
 }
 header .hamburger-btn {
@@ -113,21 +101,9 @@ header .hamburger-btn .hamburger-line {
   width: 100%;
   transition: background-color 0.3s ease-in-out;
 }
-@media screen and (min-width: 1055px) and (max-width: 1230px) {
-  header .screen-nav {
-    justify-content: flex-end;
-  }
-  header .hamburger-btn {
-    order: 1;
-  }
-}
-@media screen and (min-width: 879px) and (max-width: 1054px) {
-  header .screen-nav {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 878px) {
-  header .nav-container, header .container {
+  header .nav-container,
+  header .container {
     display: none !important;
   }
   header .mobile-nav {
@@ -136,7 +112,6 @@ header .hamburger-btn .hamburger-line {
     justify-content: space-between;
     padding: 12px 16px;
     background-color: #fff;
-    position: relative;
   }
   header .mobile-nav .mobile-screen-nav {
     display: none;
@@ -177,24 +152,11 @@ header .hamburger-btn .hamburger-line {
     align-items: center;
     text-decoration: none;
   }
-  header .mobile-nav .mobile-screen-nav .phone a img {
-    margin-right: 10px;
-    width: 14.22px;
-    height: 14.22px;
-  }
   header .mobile-nav .mobile-screen-nav .phone a p {
     margin: 0;
     letter-spacing: 0.588px;
     color: #E4B271;
     font-size: 14.694px;
-  }
-  header .mobile-nav .mobile-screen-nav .btn {
-    background-color: #E4B271;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    cursor: pointer;
   }
   header .mobile-nav.open .mobile-screen-nav {
     display: flex;
@@ -203,37 +165,24 @@ header .hamburger-btn .hamburger-line {
     justify-content: center;
     animation-name: slideIn;
   }
-  header .mobile-nav .logo-wrapper img {
-    height: auto;
-    max-width: 100%;
-  }
   header .banner-bg {
     display: none;
   }
   header .banner-bg-mobile {
     display: flex;
     width: 100%;
-    background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), lightgray 50%/cover no-repeat;
+    flex-direction: column;
+    overflow: hidden;
   }
-  header .banner-bg-mobile img {
-    display: block;
-    width: 100%;
-    height: auto;
+  header .banner-bg-mobile .banner-bg-mobile-img {
+    background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), url("../images/banner-bg.png") lightgray 50%/cover no-repeat;
+    padding-top: 70%;
   }
   header .banner-bg-mobile .banner-text {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #0B1931;
-  }
-  header .banner-bg-mobile .banner-text h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #E4B271;
-    margin: 0;
-    padding: 56px 0 24px;
+    width: 90%;
+    margin: 56px auto;
   }
   header .banner-bg-mobile .banner-text h1 {
     font-size: 40px;
@@ -241,9 +190,34 @@ header .hamburger-btn .hamburger-line {
     text-transform: uppercase;
     margin: 0;
     color: #ffffff;
+    margin-bottom: 24px;
   }
   header .banner-bg-mobile .banner-text h1 span {
     color: #E4B271;
+  }
+  header .banner-bg-mobile .banner-text p {
+    margin: 24px auto;
+    text-align: center;
+  }
+  header .banner-bg-mobile .banner-text .banner-btn {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: 12px;
+    border-bottom: 1px solid #E4B271;
+  }
+}
+@media screen and (min-width: 1055px) and (max-width: 1230px) {
+  header .screen-nav {
+    justify-content: flex-end;
+  }
+  header .hamburger-btn {
+    order: 1;
+  }
+}
+@media screen and (min-width: 879px) and (max-width: 1054px) {
+  header .screen-nav {
+    width: 100%;
   }
 }
 
@@ -269,9 +243,7 @@ header .hamburger-btn .hamburger-line {
 }
 .project {
   text-align: center;
-  display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .project h2 {
   margin-bottom: 100px;
@@ -284,16 +256,6 @@ header .hamburger-btn .hamburger-line {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  width: 100%;
-}
-.project .project-statics .project-static {
-  flex: 0 0 auto;
-  max-width: none;
-  text-align: center;
-  padding: 24px;
-  border-radius: 8px;
 }
 .project .project-statics .project-static .count {
   font-size: 72px;
@@ -311,8 +273,130 @@ header .hamburger-btn .hamburger-line {
   font-size: 20px;
   text-align: center;
   font-weight: 600;
-  margin: 0;
+  margin-top: 4px;
   line-height: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    padding-top: 0px !important;
+  }
+  .project h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .project .project-static {
+    margin-top: 56px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBFAF7;
+  margin-top: 140px;
+}
+.info .info-img {
+  background: url("../images/info-1.png") lightgrey 50%/cover no-repeat;
+  width: 88%;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
+.info .info-img-responsive {
+  display: none;
+}
+.info .info-1-text {
+  width: 61%;
+  margin: 65px auto;
+}
+.info .info-1-text h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.info .info-1-text p {
+  color: #000;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+.info .info-1 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.info .info-1-all {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  flex-wrap: nowrap;
+}
+.info .info-1-all:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.info .info-1-all .info-1-all-image {
+  width: 50%;
+}
+.info .info-1-all .info-1-all-image img {
+  width: 100%;
+}
+.info .info-1-all .info-1-all-text {
+  width: 50%;
+  padding: 56px 78px;
+  border-top: 1px solid #E4B271;
+  border-bottom: 1px solid #E4B271;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.info .info-1-all .info-1-all-text h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px auto;
+  text-align: left;
+  width: 68%;
+  line-height: 34px;
+}
+.info .info-1-all .info-1-all-text p {
+  color: #000;
+  line-height: 27.2px;
+  width: 83%;
+  margin: 0 auto;
+  text-align: left;
+}
+.info .info-1-all .info-1-all-text p:nth-of-type(odd) {
+  width: 70%;
+}
+@media screen and (max-width: 878px) {
+  .info .info-img {
+    display: none;
+  }
+  .info .info-img-responsive {
+    display: flex;
+    width: 100%;
+    background: lightgray 50%/cover no-repeat;
+  }
+  .info .info-img-responsive img {
+    width: 100%;
+  }
+  .info .info-1-all {
+    flex-direction: column;
+  }
+  .info .info-1-all-text {
+    width: 100% !important;
+  }
+  .info .info-1-all-text:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .info .info-img-responsive {
+    display: block;
+  }
 }
 
 * {
@@ -356,10 +440,9 @@ body {
   background-color: #E4B271;
   border: none;
 }
-
 .btn:hover {
   transition: 0.3s ease-in-out;
-  background-color: #f3ab4c;
+  background-color: #dc9b46;
 }
 
 .specColor {

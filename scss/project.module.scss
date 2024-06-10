@@ -1,8 +1,6 @@
 .project {
     text-align: center;
-    display: flex;
     flex-direction: column;
-    width: 100%;
 
     h2 {
         margin-bottom: 100px;
@@ -14,27 +12,19 @@
 
     .project-statics {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
-        flex-wrap: nowrap;
-        margin: 0 auto;
-        width: 100%;
 
         .project-static {
-            flex: 0 0 auto;
-            max-width: none;
-            text-align: center;
-            padding: 24px;
-            border-radius: 8px;
 
             .count {
                 font-size: 72px;
-                color: #68C5F9;
+                color: $count-color;
                 text-align: right;
                 margin-bottom: 12px;
                 line-height: 72px;
 
-                span{
+                span {
                     font-size: 24px;
                     font-weight: 400;
                     line-height: 24px;
@@ -45,9 +35,24 @@
                 font-size: 20px;
                 text-align: center;
                 font-weight: 600;
-                margin: 0;
+                margin-top: 4px;
                 line-height: 14px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .project {
+        padding-top: 0px !important;
+
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+
+        .project-static {
+            margin-top: 56px;
         }
     }
 }

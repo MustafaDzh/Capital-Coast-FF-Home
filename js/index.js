@@ -1,3 +1,15 @@
+//Nav Mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    hamburgerBtn.addEventListener('click', function() {
+        mobileNav.classList.toggle('open');
+    });
+});
+
+
+//Project Statics
 document.addEventListener('DOMContentLoaded', function() {
     let counters = document.querySelectorAll('.count');
     let speed = 800;

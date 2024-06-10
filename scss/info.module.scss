@@ -1,0 +1,128 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFAF7;
+    margin-top: 140px;
+
+    .info-img {
+        background: url('../images/info-1.png') lightgrey 50% / cover no-repeat;
+        width: 88%;
+        aspect-ratio: 16 / 9;
+        margin-left: auto;
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    .info-img-responsive {
+        display: none;
+    }
+
+    .info-1-text {
+        width: 61%;
+        margin: 65px auto;
+
+        h3 {
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #000;
+            font-size: 16px;
+            line-height: 27.2px;
+        }
+    }
+
+    .info-1 {
+        margin: 0 auto;
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .info-1-all {
+        display: flex;
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        flex-wrap: nowrap; 
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .info-1-all-image {
+            width: 50%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .info-1-all-text {
+            width: 50%;
+            padding: 56px 78px;
+            border-top: 1px solid $primary-color; 
+            border-bottom: 1px solid $primary-color; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h3 {
+                color: #000;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 16px auto;
+                text-align: left;
+                width: 68%;
+                line-height: 34px;
+            }
+
+            p {
+                color: #000;
+                line-height: 27.2px;
+                width: 83%;
+                margin: 0 auto;
+                text-align: left;
+
+                &:nth-of-type(odd) {
+                    width: 70%; 
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 878px) {
+        .info-img {
+            display: none;
+        }
+        .info-img-responsive {
+            display: flex;
+            width: 100%;
+            background: lightgray 50% / cover no-repeat;
+
+            img{
+                width: 100%;
+                
+            }
+        }
+        .info-1-all{
+            flex-direction: column;
+        }
+        .info-1-all-text{
+            width: 100% !important;
+
+            &:nth-child(odd){
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) { 
+        .info-img-responsive {
+            display: block; 
+        }
+    }
+}
