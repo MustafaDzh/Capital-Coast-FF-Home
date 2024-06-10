@@ -88,6 +88,11 @@ header .banner-bg .banner-content .banner-btn {
   border: none;
   cursor: pointer;
 }
+header .banner-bg .banner-content .banner-btn:hover {
+  text-decoration: underline;
+  text-decoration-color: #E4B271;
+  text-underline-offset: 7px;
+}
 header .mobile-nav, header .banner-bg-mobile, header .banner-text {
   display: none;
 }

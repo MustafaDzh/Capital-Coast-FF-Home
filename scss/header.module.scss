@@ -98,6 +98,12 @@ header {
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #E4B271;
+                    text-underline-offset: 7px;
+                }
             }
         }
     }
