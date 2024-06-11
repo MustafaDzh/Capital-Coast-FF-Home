@@ -26,6 +26,7 @@ $count-color: #68C5F9;
 @import './header.module.scss';
 @import './project.module.scss';
 @import './info.module.scss';
+@import './advantages.module.scss';
 
 * {
     margin: 0;
@@ -54,6 +55,7 @@ body {
     display: flex;
     padding-top: 150px;
     margin: 0 auto;
+    background-color: #0B1931
 }
 
 .btn {
