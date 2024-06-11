@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" />
     <link rel="icon" type="image/png" href="./images/Logo.svg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -166,17 +167,17 @@
     </header>
 
     <section class="project section">
-        <h2>За проекта</h2>
+        <h2 data-aos="fade-up" data-aos-once="true">За проекта</h2>
         <div class="project-statics">
-            <div class="project-static">
+            <div class="project-static" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
                 <h3><span class="count">0</span> <span>кв.м.</span></h3>
                 <p>Разгъната застроена площ</p>
             </div>
-            <div class="project-static">
+            <div class="project-static" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
                 <h3><span class="count">0</span> <span>кв.м.</span></h3>
                 <p>Застроена площ</p>
             </div>
-            <div class="project-static">
+            <div class="project-static" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
                 <h3><span class="count">0</span> <span>кв.м.</span></h3>
                 <p>Обща площ на проекта</p>
             </div>
@@ -184,23 +185,28 @@
     </section>
 
     <section class="info">
-        <div class="info-img"></div>
+        <div class="info-img-text">
+        <div class="info-img" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/info-1.png" alt="">
+        </div>
         <div class="info-img-responsive"><img src="./images/IMG.png" alt=""></div>
-        <div class="info-1">
+       
             <div class="info-1-text">
                 <h3>Ексклузивен жилищен комплекс</h3>
                 <p>Capitol Coast - ексклузивен жилищен комплекс, разположен на живописен бряг, предлагащ уникалното съчетание между спокойствие, природна красота и модерен лукс. В този оазис на тишина и уединение са разположени около 120 самостоятелни двуетажни къщи, проектирани с внимание към всеки детайл, за да предоставят на своите обитатели безпрецедентно качество на живот.</p>
             </div>
+       
+    </div>
             <div class="info-1-all">
-                <div class="info-1-all-image"><img src="./images/info-2.png" alt=""></div>
-                <div class="info-1-all-text">
+                <div class="info-1-all-image" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"><img src="./images/info-2.png" alt=""></div>
+                <div class="info-1-all-text" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                     <h3>В хармония с природата</h3>
                     <p>Всяка къща разкрива изключителни гледки и разполага с просторен озеленен двор, като по този начин създава идеалната среда за живот в хармония с природата. Комплексът предлага и разнообразие от удобства, включително търговска част с всичко необходимо за ежедневието, както и допълнителни опции за лукс и комфорт, които могат да бъдат персонализирани според индивидуалните предпочитания на всеки обитател.</p>
                 </div>
             </div>
             <div class="info-1-all">
-                <div class="info-1-all-image"><img src="./images/info-3.png" alt=""></div>
-                <div class="info-1-all-text">
+                <div class="info-1-all-image" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"><img src="./images/info-3.png" alt=""></div>
+                <div class="info-1-all-text" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <h3>Баланс между урбанистичен живот и спокойствие</h3>
                     <p>Capitol Coast е създаден с мисълта за изисканите нужди на съвременния човек, търсещ баланс между урбанистичния живот и спокойствието, което предлага близостта до морето и природата.</p>
                 </div>
@@ -209,7 +215,10 @@
     </section>
 
     <script src="./js/index.js"></script> 
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
