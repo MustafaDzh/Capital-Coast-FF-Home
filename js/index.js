@@ -31,23 +31,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Swiper
-    const swiper = new Swiper('.gallery-imager_swiper-container', {
-        navigation: {
-            nextEl: '.gallery-images_swiper-navigation-next',
-            prevEl: '.gallery-images_swiper-navigation-prev',
-        },
-        pagination: {
-            el: '.gallery-images_swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-                return `<span class="${className}"></span>`;
-            },
-        },
-        slidesPerView: 1, // Display only one slide at a time
-        spaceBetween: 0, // No space between slides
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Initialize Swiper
+//     const swiper = new Swiper('.gallery-imager_swiper-container', {
+//         navigation: {
+//             nextEl: '.gallery-images_swiper-navigation-next',
+//             prevEl: '.gallery-images_swiper-navigation-prev',
+//         },
+//         pagination: {
+//             el: '.gallery-images_swiper-pagination',
+//             clickable: true,
+//             renderBullet: function (index, className) {
+//                 return `<span class="${className}"></span>`;
+//             },
+//         },
+//         slidesPerView: 1, // Display only one slide at a time
+//         spaceBetween: 0, // No space between slides
+//     });
+// });
 
 
