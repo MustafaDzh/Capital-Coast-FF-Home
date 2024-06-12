@@ -2,6 +2,12 @@
 $primary-color: #E4B271;
 $secondary-color: #0B1931;
 $count-color: #68C5F9;
+$info-text-width: 80%;
+$info-text-line-height: 27.2px;
+$info-text-font-size: 16px;
+$info-text-color: #000;
+$advantages-text-width: 75%;
+$advantages-content-gap: 58px;
 
 // Mixins
 @mixin button-styles {
