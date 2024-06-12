@@ -1,3 +1,4 @@
+
 //Nav Mobile
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerBtn = document.querySelector('.hamburger-btn');
@@ -6,11 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburgerBtn.addEventListener('click', function() {
         mobileNav.classList.toggle('open');
     });
-});
 
-
-//Project Statics
-document.addEventListener('DOMContentLoaded', function() {
+    //Project Statics
     let counters = document.querySelectorAll('.count');
     let speed = 800;
     let targets = [100000, 40000, 400]; 
@@ -32,3 +30,24 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCount();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Swiper
+    const swiper = new Swiper('.gallery-imager_swiper-container', {
+        navigation: {
+            nextEl: '.gallery-images_swiper-navigation-next',
+            prevEl: '.gallery-images_swiper-navigation-prev',
+        },
+        pagination: {
+            el: '.gallery-images_swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return `<span class="${className}"></span>`;
+            },
+        },
+        slidesPerView: 1, // Display only one slide at a time
+        spaceBetween: 0, // No space between slides
+    });
+});
+
+

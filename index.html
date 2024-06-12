@@ -296,11 +296,95 @@
     </div>  
     </section>
 
-    <script src="./js/index.js"></script> 
+    <section class="location">
+        <div class="location-title">
+            <h2>Локация</h2>
+        </div>
+        <div class="location-content">
+            <div class="location-content_map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15292.41140539156!2d27.47123375784657!3d42.4527263359271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6ea8dce79f1c1%3A0x2c904cf1901020d!2zODAxNCDQmtGA0LDQudC80L7RgNC40LU!5e0!3m2!1sbg!2sbg!4v1718105131901!5m2!1sbg!2sbg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-content">
+            <div class="gallery-content_wrapper">
+                <h2>Галерия</h2>
+                <div class="gallery-filters">
+                    <p>Филтри</p>
+                    <ul class="gallery-filters_list">
+                        <li class="gallery-filters_list-item">
+                            <a href="#">Къща тип А</a>
+                        </li>
+                        <li class="gallery-filters_list-item">
+                            <a href="#">Къща тип Б</a>
+                        </li>
+                        <li class="gallery-filters_list-item">
+                            <a href="#">Къща тип В</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery-images_swiper">
+                    <div class="gallery-imager_swiper-container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/info-1.png" alt="">
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <img src="./images/info-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/info-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/KM�3 1 (3).png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="gallery-images_swiper-navigation">
+                            <div class="gallery-images_swiper-navigation-prev swiper-button-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" fill="white"/>
+                                    <path d="M13.0349 20.0002L28.0349 20.0002" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    <path d="M17.3333 25.3335L11.9999 20.0002L17.3333 14.6668" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="gallery-images_swiper-navigation-next swiper-button-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" fill="white"/>
+                                    <path d="M27 20H12" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    <path d="M22.7019 14.6667L28.0352 20.0001L22.7019 25.3334" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="gallery-images_swiper-pagination swiper-pagination">
+                            <div class="gallery-images_swiper-pagination--text">
+                                <p class="current">1</p><span>/</span><p>4</p>
+                            </div>
+                            <div class="gallery-images_swiper-pagination--filter">
+                                <p class="current">Къща тип А</p>
+                            </div>
+                            <div class="gallery-images_swiper-pagination--bullets">
+                                <span class="gallery-images_swiper-pagination-bullet swiper-pagination-bullet"></span>
+                                <span class="gallery-images_swiper-pagination-bullet swiper-pagination-bullet"></span>
+                                <span class="gallery-images_swiper-pagination-bullet swiper-pagination-bullet"></span>
+                                <span class="gallery-images_swiper-pagination-bullet swiper-pagination-bullet"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="module" src="./js/index.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import 'https://unpkg.com/swiper/swiper-bundle.min.css';
 .main-container {
   background: linear-gradient(180deg, rgba(12, 17, 54, 0) 61.4%, rgba(12, 17, 54, 0.4) 93.88%), url("../images/hero-home.png") lightgray 50%/cover no-repeat;
 }
@@ -246,6 +247,7 @@
 .project {
   text-align: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 .project h2 {
   margin-bottom: 100px;
@@ -562,6 +564,151 @@
   .advantages-content .advantages-img-responsive {
     display: block;
   }
+}
+
+/* Add any SCSS styles here */
+.location {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  width: 100%;
+}
+.location-title {
+  width: fit-content;
+  display: block;
+  margin: 0 auto 100px;
+  padding-top: 22px;
+}
+.location-title h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.location-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.location-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gallery {
+  padding: 100px 0 40px;
+}
+.gallery .gallery-content {
+  width: 92.5%;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+.gallery .gallery-content .gallery-content_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.gallery .gallery-content .gallery-content_wrapper h2 {
+  font-size: 28px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-filters .gallery-filters_list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-filters .gallery-filters_list li {
+  padding: 8px 12px;
+  border: 1px solid #E4B271;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-filters .gallery-filters_list li a {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper {
+  position: relative;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .swiper-wrapper {
+  display: flex;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-navigation .gallery-images_swiper-navigation-prev,
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-navigation .gallery-images_swiper-navigation-next {
+  display: flex;
+  padding: 8px;
+  cursor: pointer;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-navigation .gallery-images_swiper-navigation-prev {
+  left: 0;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-navigation .gallery-images_swiper-navigation-next {
+  right: 0;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  z-index: 1;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--text {
+  display: flex;
+  gap: 10px;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--text p {
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--text .current {
+  font-weight: bold;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--filter p {
+  font-size: 20px;
+  line-height: 14px;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--bullets {
+  display: flex;
+  gap: 4px;
+}
+.gallery .gallery-content .gallery-content_wrapper .gallery-images_swiper .gallery-imager_swiper-container .gallery-images_swiper-pagination--bullets .gallery-images_swiper-pagination-bullet {
+  width: 64px;
+  height: 2px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s linear;
 }
 
 * {
