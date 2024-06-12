@@ -33,4 +33,38 @@
                 border: 0;
             }
         }
+
+        .location-content_mobile{
+            display: none;
+        }
+
+        @media screen and (max-width:768px){
+            .location-content_mobile{
+                display: flex;
+                flex-direction: column;
+                background-color: #FFF;
+
+                .location-content_mobile-content{
+                    display: flex;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding-bottom: 56px;
+                    padding-top: 16px;
+                    color: #000;
+                    gap: 24px;
+
+                    p{
+                        width: 95%;
+                        color: #000;
+                        font-size: 18px;
+                        line-height: 30.6px;
+                    }
+
+                    span{
+                        color: #E4B271;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
