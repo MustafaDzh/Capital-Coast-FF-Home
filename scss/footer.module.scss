@@ -240,9 +240,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .footer-section{
+        padding-top: 0;
+        width: 100%;
     .inner-footer {
         flex-direction: column;
-        width: 100%;
+        width: 95% !important;
         padding: 16px;
 
         .left-footer,
@@ -259,6 +262,13 @@
 
         .right-footer {
             order: -1;
+            width: 100% !important;
+            h2{
+                text-align: center;
+            }
+        }
+        .left-footer{
+            width: 50% !important;
         }
     }
 
@@ -285,4 +295,5 @@
             margin-bottom: 16px;
         }
     }
+  }
 }
