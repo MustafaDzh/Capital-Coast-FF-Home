@@ -1,53 +1,58 @@
 
 //Nav Mobile
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const mobileNav = document.querySelector('.mobile-nav');
 
-    hamburgerBtn.addEventListener('click', function() {
+    hamburgerBtn.addEventListener('click', function () {
         mobileNav.classList.toggle('open');
     });
 
     //Project Statics
     let counters = document.querySelectorAll('.count');
-    let speed = 300;
-    let targets = [100000, 40000, 400]; 
-    
+    let speed = 100;
+    let targets = [100000, 40000, 400];
+
     counters.forEach((counter, index) => {
         let target = targets[index];
         let count = 0;
         let increment = target / speed;
-    
-        let updateCount = function() {
+
+        let updateCount = function () {
             count += increment;
             if (count < target) {
                 counter.textContent = Math.ceil(count).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
                 setTimeout(updateCount, 1);
             } else {
-                counter.textContent = target.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "); 
+                counter.textContent = target.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             }
         };
         updateCount();
     });
-})      
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Initialize Swiper
-//     const swiper = new Swiper('.gallery-imager_swiper-container', {
-//         navigation: {
-//             nextEl: '.gallery-images_swiper-navigation-next',
-//             prevEl: '.gallery-images_swiper-navigation-prev',
-//         },
-//         pagination: {
-//             el: '.gallery-images_swiper-pagination',
-//             clickable: true,
-//             renderBullet: function (index, className) {
-//                 return `<span class="${className}"></span>`;
-//             },
-//         },
-//         slidesPerView: 1, // Display only one slide at a time
-//         spaceBetween: 0, // No space between slides
-//     });
-// });
-
-
+    const swiper = new Swiper('.gallery-swiper_container', {
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.gallery-swiper_navigation-next',
+            prevEl: '.gallery-swiper_navigation-prev',
+        },
+        pagination: {
+            el: '.gallery-swiper_pagination--bullets',
+            clickable: true,
+            bulletClass: 'gallery-images_swiper-pagination-bullet',
+            bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+        on: {
+            slideChange: function () {
+                const currentSlide = swiper.realIndex + 1; 
+                const totalSlides = swiper.slides.length;
+                
+                document.querySelector('.gallery-swiper_pagination--text .current').textContent = currentSlide;                
+                document.querySelector('.gallery-swiper_pagination--text .total').textContent = totalSlides;
+            }
+        }
+    });
+    
+})

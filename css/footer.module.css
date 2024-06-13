@@ -72,6 +72,9 @@
   margin-bottom: 10px;
 }
 .footer-section .footer-content .inner-footer .right-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 53%;
 }
 .footer-section .footer-content .inner-footer .right-footer h2 {
@@ -80,6 +83,7 @@
 }
 .footer-section .footer-content .inner-footer .right-footer form {
   display: flex;
+  flex-direction: column;
 }
 .footer-section .footer-content .inner-footer .right-footer form label {
   font-size: 12px;
