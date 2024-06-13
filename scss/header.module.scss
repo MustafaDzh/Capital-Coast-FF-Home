@@ -77,7 +77,7 @@
                p {
                    font-size: 16px;
                    line-height: 1.5;
-                   width: 60%;
+                   width: 50%;
                }
 
                .banner-btn {
@@ -210,6 +210,7 @@
                justify-content: center;
                width: 90%;
                margin: 56px auto;
+               flex-wrap: wrap;
 
                h1 {
                    font-size: 40px;

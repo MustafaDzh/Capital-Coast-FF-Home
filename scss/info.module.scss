@@ -60,6 +60,7 @@
         display: flex;
         position: relative;
         flex-direction: row;
+        flex-wrap: wrap;
 
         &:nth-child(odd) {
             flex-direction: row-reverse;

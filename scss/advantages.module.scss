@@ -27,6 +27,7 @@
         flex-direction: row;
         width: 95%;
         margin: 0 auto;
+        flex-wrap: wrap;
 
         &:nth-child(even) {
             flex-direction: row-reverse;

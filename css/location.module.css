@@ -2,7 +2,6 @@
 .location {
   display: block;
   margin: 0 auto;
-  padding-bottom: 64px;
   width: 100%;
 }
 .location-title {
@@ -41,7 +40,8 @@
   }
   .location .location-content_mobile .location-content_mobile-content {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    width: 93%;
     margin: 0 auto;
     padding-bottom: 56px;
     padding-top: 16px;
@@ -55,9 +55,53 @@
     font-size: 18px;
     line-height: 30.6px;
   }
-  .location .location-content_mobile .location-content_mobile-content span {
-    color: #E4B271;
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info .time {
+    width: 40%;
+    background-color: #e4b271;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info svg {
+    width: 27px;
+    height: 12px;
+    fill: none;
+    stroke: #0d1f22;
+    stroke-width: 1.21185;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info .location {
+    color: #000;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul li {
+    display: flex;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul li p {
     font-size: 14px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .loc-btn {
+    background: transparent;
+    border: none;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E4B271;
+    width: 40%;
   }
 }
 
