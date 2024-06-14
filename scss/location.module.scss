@@ -63,14 +63,14 @@
 
                 .location-content_mobile-time {
                     display: flex;
-                    flex-direction: column; 
+                    flex-direction: column;
                     gap: 15px;
-            
+
                     .location-info {
                         display: flex;
                         align-items: center;
                         gap: 20px;
-            
+
                         .time {
                             width: 40%;
                             background-color: #e4b271;
@@ -79,7 +79,7 @@
                             color: #fff;
                             text-align: center;
                         }
-            
+
                         svg {
                             width: 27px;
                             height: 12px;
@@ -87,7 +87,7 @@
                             stroke: #0d1f22;
                             stroke-width: 1.21185;
                         }
-            
+
                         .location {
                             color: #000;
                         }
@@ -99,26 +99,26 @@
                         display: flex;
                         gap: 12px;
                         flex-direction: column;
-                        
+
                         li {
                             display: flex;
 
-                            p{
+                            p {
                                 font-size: 14px;
                             }
                         }
                     }
                 }
 
-                    .loc-btn{
-                        background: transparent;
-                        border: none;
-                        color: black;
-                        text-align: left;
-                        text-transform: uppercase;
-                        border-bottom: 1px solid #E4B271;
-                        width: 40%;
-                    }
+                .loc-btn {
+                    background: transparent;
+                    border: none;
+                    color: black;
+                    text-align: left;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #E4B271;
+                    width: 40%;
+                }
             }
         }
     }

@@ -1,13 +1,6 @@
 
 //Nav Mobile
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const mobileNav = document.querySelector('.mobile-nav');
-
-    hamburgerBtn.addEventListener('click', function () {
-        mobileNav.classList.toggle('open');
-    });
-
+document.addEventListener('DOMContentLoaded', function() {
     //Project Statics
     let counters = document.querySelectorAll('.count');
     let speed = 100;
@@ -56,3 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
 })
+
+//nav-mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.querySelector('.header-wrapper--hamburger');
+    const mobileNav = document.querySelector('.header-wrapper--mobile');
+
+
+    hamburgerBtn.addEventListener('click', function() {
+        mobileNav.classList.toggle('open');
+    });
+});

@@ -2,7 +2,7 @@
 $primary-color: #E4B271;
 $secondary-color: #0B1931;
 $count-color: #68C5F9;
-$info-text-width: 80%;
+$info-text-width: 70%;
 $info-text-line-height: 27.2px;
 $info-text-font-size: 16px;
 $info-text-color: #000;
@@ -28,8 +28,8 @@ $advantages-content-gap: 58px;
     }
 }
 
-// Import other SCSS files
 @import './header.module.scss';
+@import './hero.module.scss';
 @import './project.module.scss';
 @import './info.module.scss';
 @import './advantages.module.scss';
