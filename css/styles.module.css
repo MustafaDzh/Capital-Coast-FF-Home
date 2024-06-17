@@ -362,7 +362,6 @@ header .header-container .header-container--mobile .socials-list {
   margin-top: 50px !important;
   display: flex;
   flex-direction: column;
-  gap: 200px;
   margin: 0 auto;
   background-color: #FBFAF7;
   padding-bottom: 338px;
@@ -453,6 +452,7 @@ header .header-container .header-container--mobile .socials-list {
   display: flex;
   flex-direction: column;
   gap: 200px;
+  padding-top: 200px;
 }
 .info .info-1-all {
   display: flex;
