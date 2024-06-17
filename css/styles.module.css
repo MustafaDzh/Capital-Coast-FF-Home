@@ -27,7 +27,7 @@ header {
   background-blend-mode: multiply;
   z-index: 19;
   transition: 0.2s linear;
-  flex-wrap: wrap;
+  max-width: 1440px;
 }
 header .header-container {
   margin: 0 auto;
@@ -35,7 +35,6 @@ header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 header .header-container .header-container--logo {
   display: flex;
@@ -158,6 +157,7 @@ header .header-container .header-container--mobile .links-list li a {
   font-size: 26px;
   text-transform: uppercase;
   color: #0b1931;
+  text-decoration: none;
 }
 header .header-container .header-container--mobile .btn {
   font-size: 12px;
