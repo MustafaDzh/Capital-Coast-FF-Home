@@ -147,6 +147,7 @@ header .header-container .header-container--mobile .header-container--mobile-con
 }
 header .header-container .header-container--mobile.open {
   transform: translateY(0);
+  transition: 0.5s linear;
 }
 header .header-container .header-container--mobile .links-list {
   display: flex;
@@ -187,6 +188,9 @@ header .header-container .header-container--mobile .socials-list {
   }
 }
 @media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
   header .header-container--logo .header-container--logo_tel {
     display: none !important;
   }

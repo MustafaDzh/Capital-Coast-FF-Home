@@ -173,6 +173,7 @@ header {
 
             &.open {
                 transform: translateY(0); 
+                transition: .5s linear;
             }
 
             .links-list {
@@ -227,6 +228,7 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
+        width: 100%;
         .header-container--logo {
 
             .header-container--logo_tel {
