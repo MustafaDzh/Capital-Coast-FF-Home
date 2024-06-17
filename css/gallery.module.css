@@ -159,7 +159,6 @@
   }
   .gallery .gallery-content .gallery-content_wrapper .gallery-swiper .gallery-swiper_container .gallery-swiper_pagination--bullets {
     display: none !important;
-    /* Hide pagination bullets */
   }
 }
 

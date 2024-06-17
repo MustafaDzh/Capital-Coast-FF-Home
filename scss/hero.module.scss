@@ -54,7 +54,7 @@
             z-index: 3;
 
             .hero-content_title {
-                .montserrat {
+                .hero-content_title-text {
                     p {
                         font-size: 72px;
                         line-height: 100%;
@@ -71,7 +71,7 @@
             .hero-content_info {
                 width: 540px;
 
-                .montserrat {
+                .hero-content_info-text {
                     font-size: 14px;
                     line-height: 150%;
                 }
@@ -110,7 +110,7 @@
                     width: 90%;
                     text-align: center;
 
-                    .montserrat {
+                    .hero-content_title-text {
                         p {
                             font-size: 40px;
                         }

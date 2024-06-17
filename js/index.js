@@ -52,11 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //nav-mobile
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerBtn = document.querySelector('.header-wrapper--hamburger');
-    const mobileNav = document.querySelector('.header-wrapper--mobile');
+    const hamburgerBtn = document.querySelector('#check-icon'); // Use id selector #check-icon
+    const mobileNav = document.querySelector('.header-container--mobile');
 
-
-    hamburgerBtn.addEventListener('click', function() {
+    hamburgerBtn.addEventListener('change', function() {
         mobileNav.classList.toggle('open');
     });
 });

@@ -46,19 +46,19 @@
   top: -135px;
   z-index: 3;
 }
-.hero .hero-wrapper .hero-content .hero-content_title .montserrat p {
+.hero .hero-wrapper .hero-content .hero-content_title .hero-content_title-text p {
   font-size: 72px;
   line-height: 100%;
   text-transform: uppercase;
   text-shadow: 0px 12px 12px 24px rgba(11, 25, 49, 0.9);
 }
-.hero .hero-wrapper .hero-content .hero-content_title .montserrat p strong {
+.hero .hero-wrapper .hero-content .hero-content_title .hero-content_title-text p strong {
   color: #e4b271;
 }
 .hero .hero-wrapper .hero-content .hero-content_info {
   width: 540px;
 }
-.hero .hero-wrapper .hero-content .hero-content_info .montserrat {
+.hero .hero-wrapper .hero-content .hero-content_info .hero-content_info-text {
   font-size: 14px;
   line-height: 150%;
 }
@@ -92,7 +92,7 @@
     width: 90%;
     text-align: center;
   }
-  .hero .hero-wrapper .hero-content .hero-content_title .montserrat p {
+  .hero .hero-wrapper .hero-content .hero-content_title .hero-content_title-text p {
     font-size: 40px;
   }
   .hero .hero-wrapper .hero-content .hero-content_info {
