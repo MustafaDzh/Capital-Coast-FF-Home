@@ -27,7 +27,6 @@ header {
   background-blend-mode: multiply;
   z-index: 19;
   transition: 0.2s linear;
-  max-width: 1440px;
 }
 header .header-container {
   margin: 0 auto;
@@ -41,7 +40,11 @@ header .header-container .header-container--logo {
   align-items: center;
   gap: 85px;
 }
+header .header-container .header-container--logo .header-container--logo_m {
+  display: none;
+}
 header .header-container .header-container--logo .header-container--logo_l {
+  display: flex;
   width: 130px;
   height: 56px;
   display: flex;
@@ -72,7 +75,7 @@ header .header-container .header-container--logo .header-container--logo_tel .ic
 header .header-container .header-container--logo .header-container--logo_tel .tel {
   color: #e4b271;
   font-size: 15px;
-  font-style: 600;
+  font-weight: 600;
   text-decoration: none;
 }
 header .header-container .header-container--links .header-container--links_wrapper {
@@ -122,9 +125,18 @@ header .header-container .header-container--hamburger .header-container--hamburg
   background-color: #e4b271;
   height: 2px;
 }
-header .header-container .header-container--hamburger .header-container--hamburger-wrapper .hamburger-menu .bar .bar-1 {
+header .header-container .header-container--hamburger .header-container--hamburger-wrapper .hamburger-menu .bar.bar-1 {
   top: 0;
   transform: rotate(0);
+}
+header .header-container .header-container--hamburger .header-container--hamburger-wrapper .hamburger-menu .bar.cross.bar-1 {
+  transform: translateY(7px) rotate(-45deg);
+}
+header .header-container .header-container--hamburger .header-container--hamburger-wrapper .hamburger-menu .bar.cross.bar-2 {
+  opacity: 0;
+}
+header .header-container .header-container--hamburger .header-container--hamburger-wrapper .hamburger-menu .bar.cross.bar-3 {
+  transform: translateY(-7px) rotate(45deg);
 }
 header .header-container .header-container--mobile {
   position: absolute;
@@ -148,6 +160,7 @@ header .header-container .header-container--mobile .header-container--mobile-con
 header .header-container .header-container--mobile.open {
   transform: translateY(0);
   transition: 0.5s linear;
+  overflow-y: hidden;
 }
 header .header-container .header-container--mobile .links-list {
   display: flex;
@@ -175,6 +188,15 @@ header .header-container .header-container--mobile .socials-list {
     background: #fff;
     background-blend-mode: normal;
   }
+  header .header-container--logo {
+    z-index: 1;
+  }
+  header .header-container--logo .header-container--logo_m {
+    display: flex !important;
+  }
+  header .header-container--logo .header-container--logo_l {
+    display: none !important;
+  }
   header .header-container {
     position: relative;
     z-index: 4;
@@ -185,6 +207,16 @@ header .header-container .header-container--mobile .socials-list {
   }
   header .header-container .header-container--hamburger {
     display: flex;
+    z-index: 1;
+  }
+  header .header-container .links-list {
+    gap: 16px !important;
+  }
+  header .header-container .header-container--mobile {
+    padding-top: 70px;
+  }
+  header .header-container.open {
+    margin-top: 70px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -272,7 +304,7 @@ header .header-container .header-container--mobile .socials-list {
 
 @media screen and (max-width: 1024px) {
   .hero {
-    padding-top: 88px;
+    padding-top: 70px;
   }
   .hero .hero-wrapper {
     display: flex;
@@ -547,6 +579,7 @@ header .header-container .header-container--mobile .socials-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-top: 0;
   }
   .info .info-1 .info-1-all {
     flex-direction: column;
@@ -690,6 +723,7 @@ header .header-container .header-container--mobile .socials-list {
   .advantages-content .advantages-1-all {
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
   .advantages-content .advantages-1-all .advantages-1-all-image {
     width: 100%;
@@ -1272,6 +1306,10 @@ header .header-container .header-container--mobile .socials-list {
   font-family: Montserrat;
   color: #fff;
   font-style: normal;
+}
+
+body, html {
+  overflow-x: hidden;
 }
 
 body {

@@ -47,6 +47,10 @@ $advantages-content-gap: 58px;
     font-style: normal;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 body {
     background-color: $secondary-color;
     border-radius: 8px;

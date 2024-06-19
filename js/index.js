@@ -52,10 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //nav-mobile
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerBtn = document.querySelector('#check-icon'); // Use id selector #check-icon
+    const hamburgerBtn = document.querySelector('#check-icon'); 
     const mobileNav = document.querySelector('.header-container--mobile');
+    const bars = document.querySelectorAll('.bar'); 
 
     hamburgerBtn.addEventListener('change', function() {
-        mobileNav.classList.toggle('open');
+        if (this.checked) {
+            mobileNav.classList.add('open');
+            bars.forEach(bar => bar.classList.add('cross'));
+        } else {
+            mobileNav.classList.remove('open');
+            bars.forEach(bar => bar.classList.remove('cross'));
+        }
     });
 });
