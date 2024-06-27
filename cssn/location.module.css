@@ -1,0 +1,107 @@
+.location {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.location-title {
+  width: fit-content;
+  display: block;
+  margin: 0 auto 100px;
+  padding-top: 22px;
+}
+.location-title h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.location-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.location-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.location .location-content_mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .location .location-content_mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+  }
+  .location .location-content_mobile .location-content_mobile-content {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin: 0 auto;
+    padding-bottom: 56px;
+    padding-top: 16px;
+    color: #000;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .location .location-content_mobile .location-content_mobile-content p {
+    width: 95%;
+    color: #000;
+    font-size: 18px;
+    line-height: 30.6px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info .time {
+    width: 40%;
+    background-color: #e4b271;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info svg {
+    width: 27px;
+    height: 12px;
+    fill: none;
+    stroke: #0d1f22;
+    stroke-width: 1.21185;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-time .location-info .location {
+    color: #000;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul li {
+    display: flex;
+  }
+  .location .location-content_mobile .location-content_mobile-content .location-content_mobile-icons ul li p {
+    font-size: 14px;
+  }
+  .location .location-content_mobile .location-content_mobile-content .loc-btn {
+    background: transparent;
+    border: none;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E4B271;
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=location.module.css.map */

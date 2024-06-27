@@ -1,6 +1,5 @@
 
-//Nav Mobile
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     //Project Statics
     let counters = document.querySelectorAll('.count');
     let speed = 100;
@@ -39,24 +38,40 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         on: {
             slideChange: function () {
-                const currentSlide = swiper.realIndex + 1; 
+                const currentSlide = swiper.realIndex + 1;
                 const totalSlides = swiper.slides.length;
-                
-                document.querySelector('.gallery-swiper_pagination--text .current').textContent = currentSlide;                
+
+                document.querySelector('.gallery-swiper_pagination--text .current').textContent = currentSlide;
                 document.querySelector('.gallery-swiper_pagination--text .total').textContent = totalSlides;
             }
         }
     });
-    
+
+    const newSwiper = new Swiper('.hero_swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.hero_swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true 
+        },
+        speed: 1000,
+    });
 })
 
 //nav-mobile
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerBtn = document.querySelector('#check-icon'); 
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerBtn = document.querySelector('#check-icon');
     const mobileNav = document.querySelector('.header-container--mobile');
-    const bars = document.querySelectorAll('.bar'); 
+    const bars = document.querySelectorAll('.bar');
 
-    hamburgerBtn.addEventListener('change', function() {
+    hamburgerBtn.addEventListener('change', function () {
         if (this.checked) {
             mobileNav.classList.add('open');
             bars.forEach(bar => bar.classList.add('cross'));
