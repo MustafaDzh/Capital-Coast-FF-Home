@@ -91,48 +91,68 @@
 
                     .gallery-swiper_pagination {
                         position: absolute;
-                        bottom: 24px;
+                        bottom: 15%;
                         left: 16px;
                         z-index: 2;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 32px;
-                        z-index: 1;
-
+                        font-size: 64px;
+                    
                         &--text {
                             display: flex;
-                            gap: 10px;
-                            font-size: 64px;
-                            line-height: 100%;
-                        }
-
-                        &--filter {
-                            p {
-                                font-size: 20px;
-                                line-height: 14px;
-                            }
-                        }
-
-                        &--bullets {
-                            display: flex;
-                            gap: 4px;
-
-                            .gallery-images_swiper-pagination-bullet {
-                                width: 64px;
-                                height: 2px;
-                                background: white;
-                                cursor: pointer;
-                                transition: .3s linear;
-
-                                &.swiper-pagination-bullet-active {
-                                    background: black;
-                                }
+                            align-items: center;
+                    
+                            .current, .line, .total {
+                                font-size: 64px;
                             }
                         }
                     }
+                    
+                    .gallery-swiper_pagination--filter {
+                        position: absolute;
+                        bottom: 10%;
+                        left: 16px;
+                        z-index: 2;
+                    
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    .gallery-swiper_pagination--bullets {
+                        display: flex;
+                        height: 2px;
+                        gap: 8px;
+                        position: absolute;
+                        top: 95%;
+                        left: 16px;
+                        z-index: 2;
+                        background: none;
+            
+                        span {
+                            height: 2px;
+                            width: 64px; 
+                            cursor: pointer;
+                            transition: background-color 0.3s ease; 
+                            background: white;
+                            opacity: 0.5;
+                    
+                            &.bullet-wide {
+                                width: 64px; 
+                            }
+                    
+                            &.swiper-pagination-bullet-active {
+                                background-color: white; 
+                                opacity: 1;
+                            }
+                        }
+                    }
+                     
                 }
             }
         }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.5;
     }
 
     @media screen and (max-width: 768px) {
