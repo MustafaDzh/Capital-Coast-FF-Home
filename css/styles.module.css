@@ -511,6 +511,9 @@ header .header-container .header-container--mobile .socials-list {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  height: 420px;
+  justify-content: flex-end;
+  align-items: center;
 }
 .info .info-1-all:nth-child(even) {
   flex-direction: row-reverse;
@@ -530,7 +533,9 @@ header .header-container .header-container--mobile .socials-list {
   height: 420px;
   position: absolute;
   z-index: 3;
-  top: -9%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .info .info-1-all .info-1-all-image img {
   width: 100%;
@@ -544,11 +549,11 @@ header .header-container .header-container--mobile .socials-list {
   justify-content: center;
   gap: 16px;
   width: 800px;
-  height: 358px;
   margin-left: auto;
   border: 1px solid #E4B271;
   padding: 44px 58px;
   align-items: flex-end;
+  height: calc(100% - 62px);
 }
 .info .info-1-all .info-1-all-text h3,
 .info .info-1-all .info-1-all-text p {

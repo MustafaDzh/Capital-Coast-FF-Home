@@ -117,7 +117,9 @@
         display: flex;
         position: relative;
         flex-wrap: wrap;
-
+        height: 420px;
+        justify-content: flex-end;
+        align-items: center;
 
         &:nth-child(even) {
             flex-direction: row-reverse;
@@ -140,7 +142,9 @@
             height: 420px;
             position: absolute;
             z-index: 3;
-            top: -9%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
 
             img {
                 width: 100%;
@@ -156,11 +160,11 @@
             justify-content: center;
             gap: 16px;
             width: 800px;
-            height: 358px;
             margin-left: auto;
             border: 1px solid #E4B271;
             padding: 44px 58px;
             align-items: flex-end;
+            height: calc(100% - 62px);
 
             h3,
             p {
