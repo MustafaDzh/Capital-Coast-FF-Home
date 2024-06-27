@@ -1,10 +1,14 @@
+.advantages{
+    height: fit-content;
+    background-color: #0b1931;
+
 .advantages-content {
-    display: flex;
-    flex-direction: column;
-    gap: $advantages-content-gap;
-    margin: -120px 56px 96px 0;
-    padding-top: 100px;
-    background-color: #12274C;
+    height: fit-content;
+    width: calc(100% - 55px);
+    background: #12274c;
+    position: relative;
+    top: -124px;
+    padding: 124px 0 95px;
 
     h2 {
         text-align: center;
@@ -16,35 +20,46 @@
 
     .advantages-content-all {
         display: flex;
-        gap: 150px;
+        gap: 82px;
         padding-top: 50px;
         flex-wrap: wrap;
+        width: 92%;
+        margin: 0 auto;
     }
 
     .advantages-1-all {
         display: flex;
         position: relative;
-        flex-direction: row;
-        width: 95%;
-        margin: 0 auto;
         flex-wrap: wrap;
+        height: 420px;
+        justify-content: flex-end;
+        align-items: center;
+
 
         &:nth-child(even) {
             flex-direction: row-reverse;
 
+            .advantages-1-all-image {
+                left: unset;
+                right: 0;
+            }
+
             .advantages-1-all-text {
                 margin-right: auto;
                 margin-left: unset;
+                border: 1px solid #E4B271;
                 align-items: flex-start;
             }
         }
 
         .advantages-1-all-image {
-            width: 50%;
-            height: 420px;
-            position: absolute;
-            z-index: 3;
-            top: -7%;
+            width: 656px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .2s linear;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -55,21 +70,22 @@
         }
 
         .advantages-1-all-text {
+            align-self: center;
+            width: calc(100% - 656px);
+            height: calc(100% - 64px);
+            padding: 94px 56px;
+            border: 1px solid #E4B271;
+            border-width: 1px 1px 1px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 16px;
-            width: 800px;
-            height: 358px;
-            margin-left: auto;
-            border: 1px solid #E4B271;
-            padding: 44px 58px;
-            align-items: flex-end;
+            align-items: center;
+            gap: 24px;
+            color: #fff;
 
             h3,
             p {
                 color: #fff;
-                width: $advantages-text-width;
             }
 
             h3 {
@@ -176,4 +192,5 @@
             }
         }
     }
+}
 }
