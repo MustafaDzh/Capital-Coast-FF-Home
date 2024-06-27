@@ -39,16 +39,11 @@
         &:nth-child(even) {
             flex-direction: row-reverse;
 
-            .advantages-1-all-image {
-                left: unset;
-                right: 0;
-            }
 
             .advantages-1-all-text {
-                margin-right: auto;
-                margin-left: unset;
                 border: 1px solid #E4B271;
                 align-items: flex-start;
+                border-width: 1px 0px 1px 1px;
             }
         }
 
@@ -60,6 +55,7 @@
             justify-content: center;
             transition: .2s linear;
             overflow: hidden;
+            z-index: 3;
 
             img {
                 width: 100%;
@@ -125,15 +121,16 @@
     @media screen and (max-width: 1024px) {
         margin-right: 0;
         gap: 40px;
+        width: 100%;
 
         .advantages-content-all {
             gap: 50px;
+            width: 100%;
         }
 
         .advantages-1-all {
             flex-direction: column;
             height: auto;
-            width: 100%;
 
             .advantages-1-all-image {
                 width: 100%;
@@ -150,6 +147,7 @@
                 text-align: center;
                 padding-bottom: 120px;
                 border-top: none;
+                border-width: 1px;
 
                 h3 {
                     width: 100%;
@@ -170,6 +168,8 @@
                     align-items: flex-start;
                     text-align: center;
                     padding-bottom: 120px;
+                    border-width: 0px 1px 1px 1px;
+
                 }
             }
         }

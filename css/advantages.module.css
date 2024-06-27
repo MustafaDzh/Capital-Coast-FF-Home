@@ -36,15 +36,10 @@
 .advantages .advantages-content .advantages-1-all:nth-child(even) {
   flex-direction: row-reverse;
 }
-.advantages .advantages-content .advantages-1-all:nth-child(even) .advantages-1-all-image {
-  left: unset;
-  right: 0;
-}
 .advantages .advantages-content .advantages-1-all:nth-child(even) .advantages-1-all-text {
-  margin-right: auto;
-  margin-left: unset;
   border: 1px solid #E4B271;
   align-items: flex-start;
+  border-width: 1px 0px 1px 1px;
 }
 .advantages .advantages-content .advantages-1-all .advantages-1-all-image {
   width: 656px;
@@ -54,6 +49,7 @@
   justify-content: center;
   transition: 0.2s linear;
   overflow: hidden;
+  z-index: 3;
 }
 .advantages .advantages-content .advantages-1-all .advantages-1-all-image img {
   width: 100%;
@@ -110,14 +106,15 @@
   .advantages .advantages-content {
     margin-right: 0;
     gap: 40px;
+    width: 100%;
   }
   .advantages .advantages-content .advantages-content-all {
     gap: 50px;
+    width: 100%;
   }
   .advantages .advantages-content .advantages-1-all {
     flex-direction: column;
     height: auto;
-    width: 100%;
   }
   .advantages .advantages-content .advantages-1-all .advantages-1-all-image {
     width: 100%;
@@ -133,6 +130,7 @@
     text-align: center;
     padding-bottom: 120px;
     border-top: none;
+    border-width: 1px;
   }
   .advantages .advantages-content .advantages-1-all .advantages-1-all-text h3 {
     width: 100%;
@@ -149,6 +147,7 @@
     align-items: flex-start;
     text-align: center;
     padding-bottom: 120px;
+    border-width: 0px 1px 1px 1px;
   }
 }
 @media screen and (max-width: 768px) {
